@@ -9,4 +9,4 @@ input.addEventListener('blur', () => {
   field.classList.remove('focus')
 })
 
-// Я думаю не стоит комментировать)
+// Я думаю не стоит комментировать))
