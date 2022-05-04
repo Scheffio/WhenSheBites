@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>WhenSheBites</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header">
+      <img src="/img/logo.png" alt="logo">
+      <div class="menu-content">
+        <a href="#">All recipes</a>
+        <a href="#">Articles</a>
+        <a href="#">Popular</a>
+        <a href="#">Recipes For Easter</a>
+      </div>
+      <div class="header__burger-menu">
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+      <div class="header__signIn-and-Btn">
+        <a href="#" class="header__signIn">
+          <img src="/img/icons/sign_in.svg" alt="sign_in">
+          <span>Sign In</span>
+        </a>
+        <a href="#" class="header__addRecipeBtn"><span>Add Recipe</span></a>
+      </div>
+    </div>
+    <div class="burger__menu">
+      <div class="burger__overlay"></div>
+      <div class="burger__content">
+        <a href="#">All recipes</a>
+        <a href="#">Articles</a>
+        <a href="#">Popular</a>
+        <a href="#">Recipes For Easter</a>
+      </div>
+      <div class="burger__signIn-and-Btn">
+        <a href="#" class="burger__signIn">
+          <img src="/img/icons/sign_in.svg" alt="sign_in">
+          <span>Sign In</span>
+        </a>
+        <a href="#" class="header__addRecipeBtn"><span>Add Recipe</span></a>
+      </div>
+      <div class="burger__footer">
+        <p>&copy 2006-2022</p>
+        <p>Website "When she bites"</p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content__wrapper">
+        <a href="#" class="content__back-btn">
+          <img src="/img/icons/back-icon.png" alt="back">
+          <p>All recipes / Desserts </p>
+        </a>
+        <div class="content__recipe-block">
+          <div class="slider-block">
+            <div class="slider">
+              <div class="slider-container">
+                <div class="slider-track">
+                  <div class="slider-item">
+                    <img src="/img/products/pancake1.jpg" onclick="zoom(this)" data-id="0" alt="">
+                  </div>
+                </div>
+              </div>
+              <button class="btn-prev"></button>
+              <button class="btn-next"></button>
+            </div>
+            <div class="slider-images">
+              <img src="/img/products/pancake1.jpg" data-id="0" alt="recipe-image1">
+              <img src="/img/products/pancake2.jpg" data-id="1" alt="recipe-image2">
+              <img src="/img/products/pancake3.jpg" data-id="2" alt="recipe-image3">
+            </div>
+          </div>
+          <div class="recipe-info">
+            <p class="recipe-info__title">BREAD MACHINE CINNAMON BUNS</p>
+            <div class="recipe-info__rating">
+              <img src="/img/stars.png" alt="stars">
+              <p>(94)</p>
+            </div>
+            <div class="recipe-info__feature">
+              <p>Ready in - 15min</p>
+              <p>|</p>
+              <p>Serves - 12 persons</p>
+            </div>
+            <div class="recipe-info__author-and-date">
+              <p>Made By Maria Narabovsky</p>
+              <p>Publication: 12/03/2022</p>
+            </div>
+            <div class="recipe-info__controls">
+              <a href="#">
+                <img src="/img/icons/unsaved recipe.svg" alt="save-recipe">
+                <p>Save Recipe</p>
+              </a>
+              <a href="#">
+                <img src="/img/icons/print.svg" alt="print">
+                <p>Print Recipe</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="content__instructions">
+          <div class="instructions__Ingridients">
+            <div class="Ingridients-title">Ingridients</div>
+            <div class="Ingridients-form">
+              <div class="count">
+                <p>1/5 Cup</p>
+                <p>1 Tablespoon</p>
+                <p>1/4 Teaspoon</p>
+                <p>1 Tablespoon</p>
+                <p>1/4 Teaspoon </p>
+                <p>2</p>
+                <p>1 Cup</p>
+                <p>4 Tablespoon </p>
+                <p>1/3 Teaspoon</p>
+                <p>1/3 Cup</p>
+              </div>
+              <div class="unit">
+                <p>flour</p>
+                <p>Sugar</p>
+                <p>Cinnamon</p>
+                <p>Baking powder</p>
+                <p>Salt</p>
+                <p>Eggs</p>
+                <p>Milk</p>
+                <p>melted butter</p>
+                <p>vanilla</p>
+                <p>chocolate chips</p>
+              </div>
+            </div>
+          </div>
+          <div class="instructions__directions">
+            <div class="Ingridients-title">Directions</div>
+            <div class="directions-form">
+              <div class="form-elem">
+                <p>1.</p>
+                <p>Preheat fry pan (griddle or skillet for Americans).</p>
+              </div>
+              <div class="form-elem">
+                <p>2.</p>
+                <p>Combine flour, sugar, cinnamon, baking powder and salt in a large bowl.</p>
+              </div>
+              <div class="form-elem">
+                <p>3.</p>
+                <p>Mix together wet Ingridients and beat into dry mixture until smooth.</p>
+              </div>
+              <div class="form-elem">
+                <p>4.</p>
+                <p>Fold in chocolate chips.</p>
+              </div>
+              <div class="form-elem">
+                <p>5.</p>
+                <p>Pour or spoon batter into fry pan in desired quantity.</p>
+              </div>
+              <div class="form-elem">
+                <p>6.</p>
+                <p>Flip when top begins to bubble, then cook a minute more.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__similar">
+          <p class="similar__title">Similar Recipes</p>
+          <div class="similar-slider">
+            <div class="similar-slider-container">
+              <div class="similar-slider-track">
+                <div class="similar-slider-item">
+                  <img src="/img/products/recipes1.jpg" alt="recipe1">
+                  <p class="similar-slider-item__title">Chocolate Pancakes</p>
+                  <div class="similar-slider-item__rating">
+                    <img src="/img/stars.png" alt="stars">
+                    <p>(100)</p>
+                  </div>
+                  <p class="similar-slider-item__description">Officially obsessed with this recipe! The dough is SUPER
+                    easy to work with and not sticky at all, and when the buns are baked they are so incredibly fluffy!
+                  </p>
+                </div>
+                <div class="similar-slider-item">
+                  <img src="/img/products/recipes2.jpg" alt="recipe2">
+                  <p class="similar-slider-item__title">French toast bake</p>
+                  <div class="similar-slider-item__rating">
+                    <img src="/img/stars3.png" alt="stars">
+                    <p>(127)</p>
+                  </div>
+                  <p class="similar-slider-item__description">Officially obsessed with this recipe! The dough is SUPER
+                    easy to work with and not sticky at all, and when the buns are baked they are so incredibly fluffy!
+                  </p>
+                </div>
+                <div class="similar-slider-item">
+                  <img src="/img/products/recipes3.jpg" alt="recipe3">
+                  <p class="similar-slider-item__title">Cheddar cheese scones</p>
+                  <div class="similar-slider-item__rating">
+                    <img src="/img/stars4.png" alt="stars">
+                    <p>(83)</p>
+                  </div>
+                  <p class="similar-slider-item__description">Officially obsessed with this recipe! The dough is SUPER
+                    easy to work with and not sticky at all, and when the buns are baked they are so incredibly fluffy!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="similar-btn-prev"></button>
+            <button class="similar-btn-next"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__search-field">
+        <img src="/img/icons/loupe.svg" alt="loupe">
+        <input type="text" placeholder="Search here or try our suggestions below">
+      </div>
+      <p>© 2006-2022</p>
+      <p>WEBSITE “WHEN SHE BITES”</p>
+    </div>
+    <div class="modal">
+      <div class="modal-content">
+        <p>Add Recipe</p>
+        <div class="modal-content__form">
+          <span class="input-title">Name of recipe</span>
+          <input type="text" placeholder="French toast bake">
+          <div class="recipe-feature">
+            <div class="cooking-time">
+              <span class="input-title">Cooking time</span>
+              <input type="text" placeholder="15min">
+            </div>
+            <div class="servings">
+              <span class="input-title">Number of servings</span>
+              <input type="text" placeholder="12 Persons">
+            </div>
+          </div>
+          <div class="names">
+            <span class="input-title">Count of Ingridients</span>
+            <span class="input-title">Ingridient</span>
+          </div>
+          <div class="addable-inputs">
+            <div class="addable-inputs__element">
+              <div class="new-recipe-count-field">
+                <input type="text" placeholder="1 Cup">
+              </div>
+              <div class="new-recipe-unit-field">
+                <input type="text" placeholder="Milk">
+              </div>
+            </div>
+          </div>
+          <a href="#">Add Ingridient</a>
+          <span class="input-title">Directions</span>
+          <div class="addable-directions">
+            <div class="add-btn"></div>
+            <input type="text" placeholder="Combine Flour...">
+            <div class="new-fields">
+              <!--  Cюда вставляем новые поля -->
+            </div>
+          </div>
+        </div>
+        <a href="#" class="submit-recipe"><span>Submit</span></a>
+      </div>
+    </div>
+    <div class="zoom">
+      <div class="zoom-content">
+        <div class="img-container">
+          <img src="/img/products/pancake1.jpg" alt="zoomed-img">
+        </div>
+        <div class="close-zoom">X</div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/zoom.js"></script>
+  <script src="/js/input.js"></script>
+  <script src="/js/slider.js"></script>
+  <script src="/js/burger-menu.js"></script>
+  <script src="/js/modal.js"></script>
+</body>
+
+</html>

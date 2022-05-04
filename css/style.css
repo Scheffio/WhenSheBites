@@ -1,0 +1,273 @@
+/* Импорт отдельных файлов стилей */
+@import url(/css/core.css);
+/*  Ядро стилей, место где описываются общие стили */
+@import url(/css/header.css);
+@import url(/css/burger-menu.css);
+@import url(/css/recipe-block.css);
+@import url(/css/instructions.css);
+@import url(/css/similar.css);
+@import url(/css/footer.css);
+@import url(/css/modal.css);
+@import url(/css/zoom.css);
+/* Я разделяю файлы css для того, чтобы было удобнее
+делить код на блоки\разделы.
+Например: Для того, чтобы изменить header мне не
+приходилось искать его стили где то в файле core, у
+которого прописаны абсолютно все стили сайта */
+
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Amiko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley:wght@400;500&display=swap');
+
+/* Медиа-запросы */
+@media (max-width:1024px) {
+  .similar-slider-item:last-child {
+    display: none;
+  }
+
+  .content__recipe-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .content__instructions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .slider-images {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+
+  .directions-form,
+  .ingredients-form {
+    max-width: 100%;
+  }
+
+  .menu-content {
+    gap: 15px;
+  }
+
+  .header__signIn-and-Btn {
+    gap: 15px;
+  }
+
+  .header__signIn {
+    gap: 0;
+  }
+
+  .content__recipe-block {
+    gap: 30px;
+  }
+
+  .content__recipe-block,
+  .recipe-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .zoom-content{
+    width: 90%;
+  }
+}
+
+@media (max-width: 855px) {
+
+  .slider-item>img {
+    width: 100%;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .header__signIn-and-Btn,
+  .menu-content,
+  .content__back-btn,
+  .slider-images,
+  .similar-slider-item:nth-child(2),
+  .recipe-info__feature>p:nth-child(2),
+  .footer {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .header__burger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .header {
+    position: relative;
+    height: 70px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    z-index: 10;
+  }
+
+  .header>img:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+  }
+
+  .content {
+    margin-top: 40px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    min-width: 280px;
+  }
+
+  .slider-item>img {
+    border: 5px solid white;
+    min-width: 100%;
+    height: auto;
+    top: 0;
+  }
+
+  .btn-next {
+    width: 28px;
+    height: 28px;
+    top: 80px;
+    right: 5px;
+  }
+
+  .btn-prev {
+    width: 28px;
+    height: 28px;
+    top: 80px;
+    left: 5px;
+  }
+
+  .slider-item {
+    min-width: 270px;
+    max-width: 270px;
+    min-height: 151px;
+    max-height: 151px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .recipe-info__feature {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  .ingredients-form,
+  .directions-form {
+    gap: 20px;
+    font: var(--Amiko-Mobile);
+    padding: 30px 26px;
+    width: 100%;
+    height: 100%;
+    min-width: 280px;
+    min-height: 430px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .ingredients-title,
+  .similar__title {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .content__instructions {
+    gap: 60px;
+  }
+
+  .similar-slider-container,
+  .similar-slider-buttons {
+    width: 100%;
+    max-width: 360px;
+  }
+  .similar-slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal-content {
+    width: 300px;
+    margin-top: 150px;
+  }
+
+  .recipe-feature,
+  .addable-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .addable-directions,
+  .addable-directions>input,
+  .modal-content__form>input,
+  .cooking-time>input,
+  .servings>input,
+  .new-recipe-count-field>input,
+  .new-recipe-unit-field>input,
+  .new-field-block>input {
+    width: 270px;
+  }
+
+  .addable-inputs__element {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}

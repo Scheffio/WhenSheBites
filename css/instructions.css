@@ -1,0 +1,89 @@
+.content__instructions {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 75px;
+}
+
+.Ingridients-title {
+  font: var(--Besley-Middle);
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.Ingridients-form {
+  background-color: var(--elements-background);;
+  border-radius: 5px;
+  -webkit-box-shadow: var(--brown-shadow);
+          box-shadow: var(--brown-shadow);
+  font: var(--Amiko-Regular);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 480px;
+  gap: 50px;
+  padding: 40px 82px;
+  margin-top: 30px;
+}
+
+.count, .unit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+.instructions__Ingridients>.Ingridients-form>.unit {
+  text-transform: capitalize;
+  color: red;
+}
+
+.directions-form {
+  background-color: var(--elements-background);;
+  font: var(--Amiko-Regular);
+  -webkit-box-shadow: var(--brown-shadow);
+          box-shadow: var(--brown-shadow);
+  max-width: 575px;
+  min-height: 500px;
+  border-radius: 5px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 43px 73px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  gap: 30px;
+}
+
+.form-elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+  max-width: 428px;
+}
